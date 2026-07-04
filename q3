@@ -1,0 +1,16 @@
+import numpy as np
+
+# Create a 4x5 matrix with random integers between 20 and 80
+matrix = np.random.randint(20, 81, (4, 5))
+
+print("Matrix:\n", matrix)
+
+print("Minimum Value:", matrix.min())
+print("Maximum Value:", matrix.max())
+
+print("Sum:", matrix.sum())
+print("Mean:", matrix.mean())
+print("Standard Deviation:", matrix.std())
+
+print("Row Sum:", matrix.sum(axis=1))
+print("Column Sum:", matrix.sum(axis=0))

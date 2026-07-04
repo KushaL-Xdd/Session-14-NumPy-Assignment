@@ -1,0 +1,21 @@
+import numpy as np
+
+# Create array from 1 to 24
+arr = np.arange(1, 25)
+
+# Reshape into different dimensions
+arr1 = arr.reshape(4, 6)
+arr2 = arr.reshape(3, 8)
+arr3 = arr.reshape(2, 3, 4)
+
+print("Original Array:")
+print(arr)
+
+print("\nShape:", arr1.shape)
+print(arr1)
+
+print("\nShape:", arr2.shape)
+print(arr2)
+
+print("\nShape:", arr3.shape)
+print(arr3)

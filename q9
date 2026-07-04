@@ -1,0 +1,25 @@
+import numpy as np
+
+# Generate 6x6 matrix with random values
+matrix = np.random.randn(6, 6)
+
+print("Matrix:")
+print(matrix)
+
+print("Shape:", matrix.shape)
+print("Size:", matrix.size)
+print("Data Type:", matrix.dtype)
+
+print("Maximum Index:", np.argmax(matrix))
+print("Minimum Index:", np.argmin(matrix))
+
+print("\nTop-left 3x3 Submatrix:")
+print(matrix[:3, :3])
+
+# Replace negative numbers with absolute values
+matrix[matrix < 0] = np.abs(matrix[matrix < 0])
+
+print("\nModified Matrix:")
+print(matrix)
+
+print("Mean:", matrix.mean())
